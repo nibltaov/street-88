@@ -1,0 +1,111 @@
+@import 'fonts.css';
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+:root {
+    --mainColor: #0C0C0C;
+    --extraColor_90: rgba(105, 207, 23, 0.9);
+    --extraColor_75: rgba(105, 207, 23, 0.75);
+    --extraColor_50: rgba(105, 207, 23, 0.50);
+    --extraColorDark: #06600F;
+    --linearToRight: linear-gradient(to right, #69CF17, #417D11 100%);
+    --linearToBottom: linear-gradient(to bottom, #000000, rgba(105, 207, 23, 0.5));
+    --dark_50: rgba(0,0,0,0.5);
+    --grey: #393636;
+    --grayDark: #292929;
+    --shadowColor: rgba(17, 17, 17, 0.3);
+    --white: #FFFFFF;
+    --white_50: rgba(255, 255, 255, .5);
+    --black_50: rgba(0,0,0,.5);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    background: var(--mainColor);
+}
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head__travel {
+    color: var(--white);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+}
+.head__travel-icon {
+    font-size: 23px;
+    margin-right: 5px;
+}
+.head__list {
+    display: flex;
+}
+.head__item {
+    margin-right: 20px;
+}
+.head__item:last-of-type {
+    margin-right: 0;
+}
+.head__link {
+    color: var(--white);
+    font-size: 16px;
+    font-family: "Roboto";
+}
+.navbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid var(--white_50);
+    border-bottom: 1px solid var(--white_50);
+    background: var(--black_50);
+}
+.logo {
+    border-radius: 4px;
+    border: 4px solid var(--extraColorDark);
+    background: var(--extraColor_75);
+    font-family: 'Roboto';
+    font-weight: 700;
+    padding: 8px 14px;
+    display: block;
+    width: max-content;
+    color: var(--white);
+    font-size: 36px;
+    line-height: 24px;
+}
+.navbar__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__list {
+    display: flex;
+}
+.navbar__link {
+    color: var(--white);
+    font-size: 18px;
+    display: block;
+    padding: 22px 14px;
+    transition: .5s;
+}
+.navbar__link:hover, .navbar__link.active {
+    background: var(--extraColor_90);
+}
